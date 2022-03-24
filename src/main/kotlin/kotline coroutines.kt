@@ -1,19 +1,17 @@
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+
+import kotlinx.coroutines.*
+
 //Launch function
+
 fun main() =   runBlocking {
 
         //main thread
         println("Main starts - ${Thread.currentThread().name}")
-        //Worker/background  thread
-        /* thread {
-        println("Worker thread - ${Thread.currentThread().name}")
-        // Thread.sleep(1222)
-    }*/
+
+
+
         //using the scope in coroutines
-        GlobalScope.launch {
+        launch(Dispatchers.Default) {
             println("Worker thread start- ${Thread.currentThread().name}")
 
             suspension(1222)// coroutine is paused
