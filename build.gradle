@@ -12,7 +12,7 @@ repositories {
 
 dependencies {
     //noinspection DifferentStdlibGradleVersion
-    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.6.10'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
     implementation 'junit:junit:4.13.2'
     implementation 'org.jetbrains.kotlin:kotlin-reflect:1.6.10'
